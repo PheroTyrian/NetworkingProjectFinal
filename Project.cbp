@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Project" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="C:/Users/trisl/Desktop/SFML2.5.1MinGW/SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="C:/Users/trisl/Desktop/SFML2.5.1MinGW/SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Project" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
+					<Add directory="C:/Users/trisl/Desktop/SFML2.5.1MinGW/SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-network" />
+					<Add library="sfml-system" />
+					<Add directory="C:/Users/trisl/Desktop/SFML2.5.1MinGW/SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/CircularBuffer.h" />
+		<Unit filename="include/ClientHandler.h" />
+		<Unit filename="include/ClientSystem.h" />
+		<Unit filename="include/Global.h" />
+		<Unit filename="include/Map.h" />
+		<Unit filename="include/Message.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/ServerSystem.h" />
+		<Unit filename="include/Snapshot.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/CircularBuffer.cpp" />
+		<Unit filename="src/ClientHandler.cpp" />
+		<Unit filename="src/ClientSystem.cpp" />
+		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/Message.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/ServerSystem.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
